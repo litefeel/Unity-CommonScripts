@@ -1,0 +1,26 @@
+{
+  "name": "com.litefeel.commonscripts",
+  "displayName": "CommonScripts",
+  "version": "0.0.1",
+  "unity": "2019.4",
+  "description": "Some Scritps",
+  "keywords": [
+    "Editor"
+  ],
+  "author": {
+    "name": "litefeel",
+    "email": "litefeel@gmial.com",
+    "url": "https://www.litefeel.com"
+  },
+  "category": "Tools",
+  "type": "tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litefeel/Unity-CommonScripts.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/litefeel/Unity-CommonScripts/issues"
+  },
+  "homepage": "https://github.com/litefeel/Unity-CommonScripts#readme"
+}
