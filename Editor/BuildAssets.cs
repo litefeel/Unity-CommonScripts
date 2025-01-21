@@ -35,9 +35,7 @@ namespace litefeel.commonscripts
                 };
             }
 
-
-            var options = BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.ForceRebuildAssetBundle;
-            BuildPipeline.BuildAssetBundles(path, abbs, options, EditorUserBuildSettings.activeBuildTarget);
+            BuildPipeline.BuildAssetBundles(path, abbs, BuildAssetsOptions.Options, EditorUserBuildSettings.activeBuildTarget);
         }
 
         [MenuItem("Assets/CommonScripts/BuildSelectAssetsByABName")]
@@ -57,9 +55,7 @@ namespace litefeel.commonscripts
                 .Select(a => new AssetBundleBuild() { assetBundleName = a.Key, assetNames = a.ToArray() })
                 .ToArray();
 
-
-            var options = BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.ForceRebuildAssetBundle;
-            BuildPipeline.BuildAssetBundles(path, abbs, options, EditorUserBuildSettings.activeBuildTarget);
+            BuildPipeline.BuildAssetBundles(path, abbs, BuildAssetsOptions.Options, EditorUserBuildSettings.activeBuildTarget);
             Debug.Log($"BuildAssetBundleCount:{abbs.Length}");
 
         }
